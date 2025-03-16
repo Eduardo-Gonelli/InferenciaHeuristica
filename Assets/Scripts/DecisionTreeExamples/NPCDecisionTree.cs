@@ -28,8 +28,11 @@ public class NPCDecisionTree : MonoBehaviour
         ActionNode attackAction = new ActionNode(Attack); // Ação de ataque
 
         // Nó de decisão para verificar se o NPC está perto o suficiente para atacar
+        // Se não estiver, persegue o player.
         DecisionNode isCloseEnoughToAttack = new DecisionNode(IsCloseEnoughToAttack, attackAction, chaseAction);
         // Nó de decisão raiz para verificar se o jogador pode ser visto
+        // Se pode ser visto, verifica se o NPC está perto o suficiente para atacar.
+        // Se não está perto para atacar e nem pode ser visto, patrulha a área.
         DecisionNode canSeePlayerDecision = new DecisionNode(CanSeePlayer, isCloseEnoughToAttack, patrolAction);
 
         // Retorna o nó raiz da árvore
