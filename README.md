@@ -1,9 +1,9 @@
 # Exemplo simplificado de Árvore de Decisão para ilustrar o conceito de Heurística em Games
-Este projeto é aplicado no Bacharelado em Jogos Digitais, disciplina de Agentes Inteligentes, com o tópico Heurística em Games.
+Este projeto é utilizado no Bacharelado em Jogos Digitais, disciplina de Agentes Inteligentes, com o tópico Heurística em Games.
 
-São aplicados os pseudo-códigos de Ian Millington, da obra AI for Games, Third Edition, página 305 à 307, Boca Raton: CRC-Press, 2016.
+São trabalhados os pseudo-códigos de Ian Millington, da obra AI for Games, Third Edition, página 305 à 307, Boca Raton: CRC-Press, 2016.
 
-É aplicada a árvore de decisão descrita na imagem abaixo.
+A árvore de decisão da imagem abaixo é aplicada em um exemplo simples, para demonstrar a tomada da decisão com base em uma condição simples.
 
 ![image](dctree.png)
 
