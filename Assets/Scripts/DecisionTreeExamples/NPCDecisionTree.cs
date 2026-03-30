@@ -1,10 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 public class NPCDecisionTree : MonoBehaviour
 {
     // Raiz da árvore de decisão
     private DecisionTreeNode root;
     private GameObject player;
+    [SerializeField] TextMeshPro text;
     void Start()
     {
         // Obtém a referência do jogador
@@ -57,6 +59,7 @@ public class NPCDecisionTree : MonoBehaviour
     private void Patrol()
     {
         Debug.Log("Patrulhando a área...");
+        text.text = "ESTADO DO AGENTE" + "\n" + "Patrulhando a área...";
         // Implementação da lógica de patrulha
     }
 
@@ -64,6 +67,7 @@ public class NPCDecisionTree : MonoBehaviour
     private void Chase()
     {
         Debug.Log("Perseguindo o jogador!");
+        text.text = "ESTADO DO AGENTE" + "\n" + "Perseguindo o jogador!";
         // Implementação da lógica de perseguição
     }
 
@@ -71,6 +75,7 @@ public class NPCDecisionTree : MonoBehaviour
     private void Attack()
     {
         Debug.Log("Atacando o jogador!");
+        text.text = "ESTADO DO AGENTE" + "\n" + "Atacando o jogador!";
         // Implementação da lógica de ataque
     }
 }

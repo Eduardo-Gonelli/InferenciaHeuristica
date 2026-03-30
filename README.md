@@ -1,4 +1,7 @@
 # Exemplo simplificado de Árvore de Decisão para ilustrar o conceito de Heurística em Games
+
+**Versão do projeto**: Unity 6000.0.32f1
+
 Este projeto é utilizado no Bacharelado em Jogos Digitais, disciplina de Agentes Inteligentes, com o tópico Heurística em Games.
 
 São trabalhados os pseudo-códigos de Ian Millington, da obra AI for Games, Third Edition, página 305 à 307, Boca Raton: CRC-Press, 2016.
